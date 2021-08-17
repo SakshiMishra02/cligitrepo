@@ -1,0 +1,7 @@
+Any Python user who needs to download your objects has either google-crc32c or crcmod installed.
+
+Any gsutil user who needs to download your objects has crcmod installed.
+
+For example, if you use gsutil to upload video assets that are only served by a Java application, parallel composite uploads are a good choice because there are efficient CRC32C implementations available in Java.
+
+You do not need the uploaded objects to have an MD5 hash.
